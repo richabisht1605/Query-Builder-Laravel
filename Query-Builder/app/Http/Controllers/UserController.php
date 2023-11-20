@@ -149,19 +149,19 @@ class UserController extends Controller
     //to update user data
     public function updateUser()
     {
-        $user = DB::table('users')
-        ->where('id',2) //sare where yha use kr skte hain
-        ->update([
-            'email' => 'harbans@gmail.com',
-        ]);
+        // $user = DB::table('users')
+        // ->where('id',2) //sare where yha use kr skte hain
+        // ->update([
+        //     'email' => 'harbans@gmail.com',
+        // ]);
 
-        if($user)
-            {
-                echo "<h1> Data Successfully added</h1>";
-            }
-        else{
-                echo "<h1> Data Not inserted </h1>";
-            } 
+        // if($user)
+        //     {
+        //         echo "<h1> Data Successfully added</h1>";
+        //     }
+        // else{
+        //         echo "<h1> Data Not inserted </h1>";
+        //     } 
 
             $user = DB::table('users')
                     ->where('id',2) //sare where yha use kr skte hain
